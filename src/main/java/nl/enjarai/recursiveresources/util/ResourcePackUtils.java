@@ -53,7 +53,9 @@ public class ResourcePackUtils {
             } else if (pack instanceof ModNioResourcePack modResourcePack) {
                 return Path.of(modResourcePack.getId().replaceAll(UNSAFE_PATH_REGEX, "_"));
             } else if (pack instanceof OverlayResourcePack overlayResourcePack) {
-                return determinePackFolder(((OverlayResourcePackAccessor) overlayResourcePack).getOverlaysAndBase().getFirst());
+                // quadaFork: the stack is reversed overlays followed by the base pack (CompositePackResources) — the base is the last entry.
+                // getFirst() returned the last overlay folder, so packs with overlays dropped out of their folder view.
+                return determinePackFolder(((OverlayResourcePackAccessor) overlayResourcePack).getOverlaysAndBase().getLast());
             } else {
                 RecursiveResources.LOGGER.warn("Failed to determine source folder for pack: " + pack.getId() + ", unknown pack type: " + pack.getClass().getName());
                 return null;
