@@ -31,7 +31,8 @@
     ]
   },
   "mixins": [
-    "recursiveresources.mixins.json"
+    "recursiveresources.mixins.json",
+    "recursiveresources.iris.mixins.json"
   ],
   "accessWidener": "recursiveresources.accesswidener",
 
@@ -40,6 +41,9 @@
     "fabric-api": "*",
     "cicada": ">=0.13.0 <1.0.0",
     "fabricloader": ">=0.15"
+  },
+  "suggests": {
+    "iris": "*"
   },
 
   "custom": {
