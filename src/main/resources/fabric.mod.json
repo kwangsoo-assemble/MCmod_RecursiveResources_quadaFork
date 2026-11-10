@@ -3,17 +3,20 @@
   "id": "recursiveresources",
   "version": "${version}",
 
-  "name": "Recursive Resources",
-  "description": "Enhances the Resource Pack menu by adding folder support for easier pack organization, ability to search packs by name or description, and new sorting options.",
+  "name": "Recursive Resources (quadaFork)",
+  "description": "Enhances the Resource Pack menu by adding folder support for easier pack organization, ability to search packs by name or description, and new sorting options. quadaFork: Minecraft 1.21.8, Iris shader packs in sub-folders, overlay pack folder fix.",
   "icon": "assets/recursiveresources/icon.png",
   "authors": [
     "enjarai",
     "chylex"
   ],
+  "contributors": [
+    "kwangsoo (quadaFork)"
+  ],
   "contact": {
     "homepage": "https://enjarai.dev",
-    "sources": "https://github.com/enjarai/recursive-resources",
-    "issues": "https://github.com/enjarai/recursive-resources/issues"
+    "sources": "https://github.com/kwangsoo-assemble/MCmod_RecursiveResources_quadaFork",
+    "issues": "https://github.com/kwangsoo-assemble/MCmod_RecursiveResources_quadaFork/issues"
   },
 
   "license": "MPL-2.0",
